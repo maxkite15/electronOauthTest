@@ -4,14 +4,35 @@
 <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Node oAuth2 Example</title>
+        <title>Neuro</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
         <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
-        <a href="https://github.com/login/oauth/authorize?client_id=05a49e0f9864bb61b880&redirect_uri=http://localhost:8080/oauth/redirect">Login with github</a>
+        <!--<a href="https://github.com/login/oauth/authorize?client_id=05a49e0f9864bb61b880&redirect_uri=http://localhost:8180/oauth/redirect">Login with github</a>-->
+		<form action="/get_token" method="post">
+			<div>
+				<label for="client_id">Client id:</label>
+				<input type="text" id="client_id" name="client_id">
+			</div>
+			<div>
+				<label for="client_secret">Client secret:</label>
+				<input type="text" id="client_secret" name="client_secret">
+			</div>
+			<div>
+				<label for="state">State:</label>
+				<input type="text" id="state" name="state">
+			</div>
+			<div>
+				<label for="redirect_uri">Redirect uri:</label>
+				<input type="text" id="redirect_uri" name="redirect_uri">
+			</div>
+			<div class="button">
+			<button type="submit">Get token</button>
+			</div>
+		</form>
 </body>
 
 </html>

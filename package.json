@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "An example of oAuth2.0 using node",
   "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron .",
+    "dev": "concurrently -k \"npm start\"",
+	"winbuild": "electron-packager . Neuro --platform=win32 --arch=all --overwrite --prune --ignore=node_modules/\\.bin"
+  },
   "repository": "https://github.com/maxkite15/electronOauthTest",
   "author": "sohamkamani",
   "license": "MIT",
@@ -10,5 +15,9 @@
     "axios": "^0.18.0",
     "electron": "^5.0.6",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "cross-env": "^5.2.0"
   }
 }

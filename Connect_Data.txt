@@ -1,0 +1,21 @@
+client_id=62
+client_secret="ast-ostrov-widget-secret"
+redirect_uri="http://pacific-everglades-70974.herokuapp.com/"
+
+client_data="{\"AllowedScopes\": [\"api\"], \"AllowedGrantTypes\": [\"implicit\"], \"AccessTokenLifetime\": 990000, \"AllowAccessTokensViaBrowser\": true}"
+
+
+client_id=70
+client_secret=secret
+redirect_uri=http://localhost:8180/token/
+
+{
+  "id": 71,
+  "name": "Maxim Korshunov",
+  "enabled": true,
+  "secret": "secret",
+  "redirectUri": "http://127.0.0.1:8180/token/",
+  "clientData": "{\"AllowedScopes\": [\"api\"], \"AllowedGrantTypes\": [\"implicit\"], \"AccessTokenLifetime\": 99999999999, \"AllowAccessTokensViaBrowser\": true}",
+  "comment": "debug",
+  "modified": "2019-07-03T19:35:57.107875+03:00"
+}

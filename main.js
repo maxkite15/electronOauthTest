@@ -1,14 +1,15 @@
-const { BrowserWindow, app } = require('electron')
-require('./index.js')
+const { BrowserWindow, app } = require('electron');
+require('./index.js');
 
-let mainWindow = null
+let mainWindow = null;
 
 function main() {
-  mainWindow = new BrowserWindow()
-  mainWindow.loadURL(`http://localhost:8180/`)
+  mainWindow = new BrowserWindow();
+  mainWindow.loadURL(`http://localhost:8180/`);
+
   mainWindow.on('close', event => {
-    mainWindow = null
-  })
+    mainWindow = null;
+  });
 }
 
-app.on('ready', main)
+app.on('ready', main);
